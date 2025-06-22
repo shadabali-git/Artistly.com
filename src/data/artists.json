@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Luna Martinez",
+    "type": "Singer-Songwriter",
+    "location": "Los Angeles, CA",
+    "rating": 4.9,
+    "reviewCount": 127,
+    "hourlyRate": 500,
+    "image": "/placeholder.svg?height=400&width=400",
+    "genres": ["Pop", "Acoustic", "Indie"],
+    "experience": "8 years",
+    "description": "Award-winning singer-songwriter with a soulful voice and captivating stage presence. Perfect for intimate venues and acoustic sets.",
+    "equipment": ["Acoustic Guitar", "Microphone", "Amplifier"],
+    "availability": "Available weekends",
+    "portfolio": [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "The Midnight Collective",
+    "type": "Jazz Band",
+    "location": "New York, NY",
+    "rating": 4.8,
+    "reviewCount": 89,
+    "hourlyRate": 1200,
+    "image": "/placeholder.svg?height=400&width=400",
+    "genres": ["Jazz", "Blues", "Swing"],
+    "experience": "12 years",
+    "description": "Professional 5-piece jazz ensemble specializing in classic standards and modern interpretations. Perfect for corporate events and upscale venues.",
+    "equipment": ["Full Band Setup", "Sound System", "Lighting"],
+    "availability": "Available most evenings",
+    "portfolio": [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "DJ Phoenix",
+    "type": "DJ/Producer",
+    "location": "Miami, FL",
+    "rating": 4.7,
+    "reviewCount": 203,
+    "hourlyRate": 800,
+    "image": "/placeholder.svg?height=400&width=400",
+    "genres": ["Electronic", "House", "Hip-Hop"],
+    "experience": "6 years",
+    "description": "High-energy DJ and producer known for reading the crowd and keeping the dance floor packed. Specializes in weddings and club events.",
+    "equipment": ["DJ Controller", "Sound System", "Lighting Rig", "Fog Machine"],
+    "availability": "Flexible schedule",
+    "portfolio": [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Sarah Chen",
+    "type": "Classical Pianist",
+    "location": "San Francisco, CA",
+    "rating": 5.0,
+    "reviewCount": 45,
+    "hourlyRate": 600,
+    "image": "/placeholder.svg?height=400&width=400",
+    "genres": ["Classical", "Contemporary", "Film Scores"],
+    "experience": "15 years",
+    "description": "Classically trained pianist with conservatory education. Elegant performances for weddings, corporate events, and private parties.",
+    "equipment": ["Digital Piano", "Bench", "Music Stand"],
+    "availability": "Weekends preferred",
+    "portfolio": [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Rock Solid",
+    "type": "Rock Band",
+    "location": "Austin, TX",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "hourlyRate": 1500,
+    "image": "/placeholder.svg?height=400&width=400",
+    "genres": ["Rock", "Alternative", "Classic Rock"],
+    "experience": "10 years",
+    "description": "High-energy rock band with a repertoire spanning decades. Known for electrifying performances and crowd interaction.",
+    "equipment": ["Full Band Setup", "PA System", "Stage Lighting"],
+    "availability": "Friday-Sunday",
+    "portfolio": [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Maria Gonzalez",
+    "type": "Flamenco Dancer",
+    "location": "Barcelona, Spain",
+    "rating": 4.9,
+    "reviewCount": 78,
+    "hourlyRate": 700,
+    "image": "/placeholder.svg?height=400&width=400",
+    "genres": ["Flamenco", "Spanish Folk", "Contemporary"],
+    "experience": "20 years",
+    "description": "Passionate flamenco dancer with authentic Spanish training. Brings cultural richness and dramatic flair to any event.",
+    "equipment": ["Castanets", "Traditional Costumes", "Portable Floor"],
+    "availability": "Flexible international travel",
+    "portfolio": [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400"
+    ]
+  }
+]
