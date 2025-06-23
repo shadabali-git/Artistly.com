@@ -16,13 +16,13 @@ import {
   HeartFilled,
 } from "@ant-design/icons";
 import artistsData from "@/data/artists.json"
-import { BookingForm } from "@/components/booking-form"
+import BookingForm from "@/components/booking-form"
 
 interface ArtistPageProps {
   params: Promise<{ id: string }>
 }
 
-export default async function ArtistPage({ params }: ArtistPageProps) {
+ const ArtistPage:React.FC<ArtistPageProps>= async({ params })=>{
   const { id } = await params
   const artist = artistsData.find((a) => a.id === id)
 
@@ -288,3 +288,4 @@ export default async function ArtistPage({ params }: ArtistPageProps) {
     </div>
   )
 }
+export default ArtistPage

@@ -7,16 +7,16 @@
     "rating": 4.9,
     "reviewCount": 127,
     "hourlyRate": 500,
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "https://images.unsplash.com/photo-1587397845856-6c6c2f79ff78?w=400",
     "genres": ["Pop", "Acoustic", "Indie"],
     "experience": "8 years",
     "description": "Award-winning singer-songwriter with a soulful voice and captivating stage presence. Perfect for intimate venues and acoustic sets.",
     "equipment": ["Acoustic Guitar", "Microphone", "Amplifier"],
     "availability": "Available weekends",
     "portfolio": [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400"
+      "https://images.unsplash.com/photo-1557180295-76eee20ae8aa?w=400",
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400"
     ]
   },
   {
@@ -27,16 +27,16 @@
     "rating": 4.8,
     "reviewCount": 89,
     "hourlyRate": 1200,
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400",
     "genres": ["Jazz", "Blues", "Swing"],
     "experience": "12 years",
     "description": "Professional 5-piece jazz ensemble specializing in classic standards and modern interpretations. Perfect for corporate events and upscale venues.",
     "equipment": ["Full Band Setup", "Sound System", "Lighting"],
     "availability": "Available most evenings",
     "portfolio": [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400"
+      "https://images.unsplash.com/photo-1550455269-09884f1dcef8?w=400",
+      "https://images.unsplash.com/photo-1587397845924-1c52b4a86e99?w=400",
+      "https://images.unsplash.com/photo-1560932680-0b42f3a25656?w=400"
     ]
   },
   {
@@ -47,16 +47,16 @@
     "rating": 4.7,
     "reviewCount": 203,
     "hourlyRate": 800,
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "https://images.unsplash.com/photo-1589381811636-2c0f3b1231be?w=400",
     "genres": ["Electronic", "House", "Hip-Hop"],
     "experience": "6 years",
     "description": "High-energy DJ and producer known for reading the crowd and keeping the dance floor packed. Specializes in weddings and club events.",
     "equipment": ["DJ Controller", "Sound System", "Lighting Rig", "Fog Machine"],
     "availability": "Flexible schedule",
     "portfolio": [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400"
+      "https://images.unsplash.com/photo-1585060544811-0476c1e1c13e?w=400",
+      "https://images.unsplash.com/photo-1542751110-97427bbecf20?w=400",
+      "https://images.unsplash.com/photo-1608231387042-66d177f2bfae?w=400"
     ]
   },
   {
@@ -67,16 +67,16 @@
     "rating": 5.0,
     "reviewCount": 45,
     "hourlyRate": 600,
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "https://images.unsplash.com/photo-1576502200916-3808e07386a5?w=400",
     "genres": ["Classical", "Contemporary", "Film Scores"],
     "experience": "15 years",
     "description": "Classically trained pianist with conservatory education. Elegant performances for weddings, corporate events, and private parties.",
     "equipment": ["Digital Piano", "Bench", "Music Stand"],
     "availability": "Weekends preferred",
     "portfolio": [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400"
+      "https://images.unsplash.com/photo-1508610048659-a06b669eab6d?w=400",
+      "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=400",
+      "https://images.unsplash.com/photo-1485841890310-6a055c88698a?w=400"
     ]
   },
   {
@@ -87,16 +87,16 @@
     "rating": 4.6,
     "reviewCount": 156,
     "hourlyRate": 1500,
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "https://images.unsplash.com/photo-1511671782798-c0973d27a1f5?w=400",
     "genres": ["Rock", "Alternative", "Classic Rock"],
     "experience": "10 years",
     "description": "High-energy rock band with a repertoire spanning decades. Known for electrifying performances and crowd interaction.",
     "equipment": ["Full Band Setup", "PA System", "Stage Lighting"],
     "availability": "Friday-Sunday",
     "portfolio": [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400"
+      "https://images.unsplash.com/photo-1606240724602-5c60e031e410?w=400",
+      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=400",
+      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400"
     ]
   },
   {
@@ -107,16 +107,16 @@
     "rating": 4.9,
     "reviewCount": 78,
     "hourlyRate": 700,
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400",
     "genres": ["Flamenco", "Spanish Folk", "Contemporary"],
     "experience": "20 years",
     "description": "Passionate flamenco dancer with authentic Spanish training. Brings cultural richness and dramatic flair to any event.",
     "equipment": ["Castanets", "Traditional Costumes", "Portable Floor"],
     "availability": "Flexible international travel",
     "portfolio": [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400"
+      "https://images.unsplash.com/photo-1582738412000-e18ef6753d3e?w=400",
+      "https://images.unsplash.com/photo-1618933164006-d6a7931ed957?w=400",
+      "https://images.unsplash.com/photo-1579572334090-3d422f6f05c0?w=400"
     ]
   }
 ]

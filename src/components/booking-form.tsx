@@ -21,7 +21,7 @@ interface BookingFormProps {
   artist: Artist
 }
 
-export function BookingForm({ artist }: BookingFormProps) {
+const BookingForm:React.FC<BookingFormProps>=({ artist }) =>{
   const [formData, setFormData] = useState({
     eventTitle: "",
     eventDate: "",
@@ -186,3 +186,4 @@ export function BookingForm({ artist }: BookingFormProps) {
     </Card>
   )
 }
+export default BookingForm

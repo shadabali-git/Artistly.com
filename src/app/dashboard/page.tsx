@@ -27,6 +27,7 @@ export default function DashboardPage() {
   // Mock data for dashboard stats
   const stats = [
     {
+      id: 1,
       title: "Total Bookings",
       value: "24",
       change: "+12%",
@@ -34,6 +35,7 @@ export default function DashboardPage() {
       color: "text-blue-600",
     },
     {
+      id: 2,
       title: "Revenue This Month",
       value: "$8,450",
       change: "+23%",
@@ -41,6 +43,7 @@ export default function DashboardPage() {
       color: "text-green-600",
     },
     {
+      id: 3,
       title: "Active Artists",
       value: "12",
       change: "+2",
@@ -48,6 +51,7 @@ export default function DashboardPage() {
       color: "text-purple-600",
     },
     {
+      id: 4,
       title: "Avg Rating",
       value: "4.8",
       change: "+0.2",
@@ -118,8 +122,8 @@ export default function DashboardPage() {
           <TabsContent value="overview" className="space-y-6">
             {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {stats.map((stat, index) => (
-                <Card key={index}>
+              {stats.map((stat) => (
+                <Card key={stat.id} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
                       <div>
@@ -168,11 +172,11 @@ export default function DashboardPage() {
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      { name: "Luna Martinez", bookings: 8, revenue: "$4,000", rating: 4.9 },
-                      { name: "The Midnight Collective", bookings: 6, revenue: "$7,200", rating: 4.8 },
-                      { name: "DJ Phoenix", bookings: 5, revenue: "$4,000", rating: 4.7 },
-                    ].map((artist, index) => (
-                      <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                      {id:1, name: "Luna Martinez", bookings: 8, revenue: "$4,000", rating: 4.9 },
+                      {id:2, name: "The Midnight Collective", bookings: 6, revenue: "$7,200", rating: 4.8 },
+                      {id:3, name: "DJ Phoenix", bookings: 5, revenue: "$4,000", rating: 4.7 },
+                    ].map((artist) => (
+                      <div key={artist.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                         <div className="flex items-center space-x-3">
                           <Avatar>
                             <AvatarImage src="/placeholder.svg?height=40&width=40" />
@@ -275,12 +279,12 @@ export default function DashboardPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { name: "Luna Martinez", type: "Singer-Songwriter", status: "Active", bookings: 8, rating: 4.9 },
-                { name: "The Midnight Collective", type: "Jazz Band", status: "Active", bookings: 6, rating: 4.8 },
-                { name: "DJ Phoenix", type: "DJ/Producer", status: "Active", bookings: 5, rating: 4.7 },
-                { name: "Sarah Chen", type: "Classical Pianist", status: "Inactive", bookings: 3, rating: 5.0 },
-              ].map((artist, index) => (
-                <Card key={index}>
+                {id:1,name: "Luna Martinez", type: "Singer-Songwriter", status: "Active", bookings: 8, rating: 4.9 },
+                {id:2,name: "The Midnight Collective", type: "Jazz Band", status: "Active", bookings: 6, rating: 4.8 },
+                {id:3,name: "DJ Phoenix", type: "DJ/Producer", status: "Active", bookings: 5, rating: 4.7 },
+                {id:4,name: "Sarah Chen", type: "Classical Pianist", status: "Inactive", bookings: 3, rating: 5.0 },
+              ].map((artist) => (
+                <Card key={artist.id}>
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between mb-4">
                       <Avatar className="h-12 w-12">
@@ -350,12 +354,12 @@ export default function DashboardPage() {
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      { genre: "Singer-Songwriter", bookings: 12, percentage: 40 },
-                      { genre: "Jazz Band", bookings: 8, percentage: 27 },
-                      { genre: "DJ/Producer", bookings: 6, percentage: 20 },
-                      { genre: "Classical", bookings: 4, percentage: 13 },
-                    ].map((item, index) => (
-                      <div key={index} className="space-y-2">
+                      {id:1, genre: "Singer-Songwriter", bookings: 12, percentage: 40 },
+                      {id:2, genre: "Jazz Band", bookings: 8, percentage: 27 },
+                      {id:3, genre: "DJ/Producer", bookings: 6, percentage: 20 },
+                      {id:4, genre: "Classical", bookings: 4, percentage: 13 },
+                    ].map((item) => (
+                      <div key={item.id} className="space-y-2">
                         <div className="flex justify-between text-sm">
                           <span className="font-medium">{item.genre}</span>
                           <span className="text-gray-600">{item.bookings} bookings</span>
