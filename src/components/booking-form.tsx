@@ -49,7 +49,7 @@ const BookingForm:React.FC<BookingFormProps>=({ artist }) =>{
     : 0
 
   return (
-    <Card className="sticky top-4">
+    <Card className="">
       <CardHeader>
         <CardTitle className="flex items-center">
           <CalendarOutlined className="h-5 w-5 mr-2" />

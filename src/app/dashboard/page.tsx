@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -20,9 +20,28 @@ import {
   SettingOutlined,
 } from "@ant-design/icons"
 import bookingsData from "@/data/bookings.json"
+import { toast } from "sonner"
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/hooks/useAuth';
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState("overview")
+    const { isAuthenticated, isLoading } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isLoading && !isAuthenticated) {
+      router.push('/auth');
+    }
+  }, [isAuthenticated, isLoading, router]);
+
+  if (isLoading) {
+    return <p className="text-center mt-10">Checking auth...</p>;
+  }
+
+  if (!isAuthenticated) {
+    return null; // Already redirected
+  }
 
   // Mock data for dashboard stats
   const stats = [
@@ -97,7 +116,7 @@ export default function DashboardPage() {
               <p className="text-gray-600">Manage your artists and bookings</p>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="outline">
+              <Button variant="outline" onClick={() => toast.info("Settings feature coming soon")}>
                 <SettingOutlined className="h-4 w-4 mr-2" />
                 Settings
               </Button>
@@ -149,7 +168,7 @@ export default function DashboardPage() {
                 <CardContent>
                   <div className="space-y-4">
                     {bookingsData.slice(0, 3).map((booking) => (
-                      <div key={booking.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                      <div key={booking.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
                         <div className="flex-1">
                           <p className="font-medium">{booking.eventTitle}</p>
                           <p className="text-sm text-gray-600">{booking.artistName}</p>
@@ -252,13 +271,13 @@ export default function DashboardPage() {
 
                       {booking.status === "pending" && (
                         <div className="flex gap-2">
-                          <Button size="sm" className="bg-green-600 hover:bg-green-700">
+                          <Button size="sm" className="bg-green-600 hover:bg-green-700" onClick={() => toast.success("Booking accepted not working yet")}>
                             Accept
                           </Button>
-                          <Button size="sm" variant="outline">
+                          <Button size="sm" variant="outline" onClick={() => toast.warning("Booking declined not working yet")}>
                             Decline
                           </Button>
-                          <Button size="sm" variant="outline">
+                          <Button size="sm" variant="outline" onClick={() => toast.info("Messaging artist feature coming soon")}>
                             <MessageOutlined className="h-4 w-4 mr-1" />
                             Message
                           </Button>
@@ -274,7 +293,7 @@ export default function DashboardPage() {
           <TabsContent value="artists" className="space-y-6">
             <div className="flex justify-between items-center">
               <h2 className="text-xl font-semibold">Manage Artists</h2>
-              <Button>Add New Artist</Button>
+              <Button onClick={()=>toast.info("Backend Add soon")}>Add New Artist</Button>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -317,10 +336,10 @@ export default function DashboardPage() {
                     </div>
 
                     <div className="flex gap-2">
-                      <Button size="sm" variant="outline" className="flex-1">
+                      <Button size="sm" variant="outline" className="flex-1" onClick={() => toast.info("Edit artist feature coming soon")}>
                         Edit Profile
                       </Button>
-                      <Button size="sm" variant="outline">
+                      <Button size="sm" variant="outline" onClick={() => toast.info("View bookings feature coming soon")}>
                         <MessageOutlined className="h-4 w-4" />
                       </Button>
                     </div>

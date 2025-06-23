@@ -1,6 +1,7 @@
 import Link from "next/link"
 import {CustomerServiceOutlined,FacebookFilled,InstagramOutlined,XOutlined ,LinkedinOutlined } from "@ant-design/icons"
 
+//  nothing is working it's a build in Template used 
 
 export function Footer() {
   return (

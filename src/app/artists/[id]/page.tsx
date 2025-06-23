@@ -18,6 +18,8 @@ import {
 import artistsData from "@/data/artists.json"
 import BookingForm from "@/components/booking-form"
 
+import reviews from "@/data/reviews.json"
+
 interface ArtistPageProps {
   params: Promise<{ id: string }>
 }
@@ -163,27 +165,7 @@ interface ArtistPageProps {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {[
-                    {
-                      name: "Sarah Johnson",
-                      rating: 5,
-                      comment:
-                        "Absolutely incredible performance! Luna's voice was mesmerizing and she had the entire audience captivated.",
-                      date: "2 weeks ago",
-                    },
-                    {
-                      name: "Michael Chen",
-                      rating: 5,
-                      comment: "Professional, punctual, and talented. Made our corporate event truly memorable.",
-                      date: "1 month ago",
-                    },
-                    {
-                      name: "Emma Rodriguez",
-                      rating: 4,
-                      comment: "Great performance, would definitely book again for future events.",
-                      date: "2 months ago",
-                    },
-                  ].map((review, index) => (
+                  {reviews.map((review, index) => (
                     <div key={index} className="border-b border-gray-200 last:border-b-0 pb-4 last:pb-0">
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center">

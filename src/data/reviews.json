@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Sarah Johnson",
+        "rating": 5,
+        "comment": "Absolutely incredible performance! Luna's voice was mesmerizing and she had the entire audience captivated.",
+        "date": "2 weeks ago"
+    },
+    {
+        "name": "Michael Chen",
+        "rating": 5,
+        "comment": "Professional, punctual, and talented. Made our corporate event truly memorable.",
+        "date": "1 month ago"
+    },
+    {
+        "name": "Emma Rodriguez",
+        "rating": 4,
+        "comment": "Great performance, would definitely book again for future events.",
+        "date": "2 months ago"
+    }
+]

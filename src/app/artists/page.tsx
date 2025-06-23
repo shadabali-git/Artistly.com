@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo ,useEffect} from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -17,14 +17,18 @@ import {
   FilterOutlined,
 } from "@ant-design/icons";
 import artistsData from "@/data/artists.json"
+import { useRouter } from "next/navigation"
+import { useAuth } from "@/hooks/useAuth"
 
 export default function ArtistsPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedGenre, setSelectedGenre] = useState("all")
   const [selectedLocation, setSelectedLocation] = useState("all")
   const [priceRange, setPriceRange] = useState("all")
-
-  // Get unique genres and locations for filters
+   const { isAuthenticated, isLoading } = useAuth();
+    const router = useRouter();
+  
+   // Get unique genres and locations for filters
   const genres = useMemo(() => {
     const allGenres = artistsData.flatMap((artist) => artist.genres)
     return [...new Set(allGenres)]
@@ -55,6 +59,20 @@ export default function ArtistsPage() {
       return matchesSearch && matchesGenre && matchesLocation && matchesPrice
     })
   }, [searchTerm, selectedGenre, selectedLocation, priceRange])
+
+   useEffect(() => {
+      if (!isLoading && !isAuthenticated) {
+        router.push('/auth');
+      }
+    }, [isAuthenticated, isLoading, router]);
+  
+    if (isLoading) {
+      return <p className="text-center mt-10">Checking auth...</p>;
+    }
+  
+    if (!isAuthenticated) {
+      return null; // Already redirected
+    }
 
   return (
     <div className="min-h-screen bg-gray-50">
