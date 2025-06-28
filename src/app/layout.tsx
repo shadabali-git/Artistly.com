@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 import { Toaster } from 'sonner';
+import { SidebarProvider } from "@/components/ui/sidebar"
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,9 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Artistly - Performing Artist Booking Platform",
-  description: "Connect with talented performing artists for your next event",
-};
+  title: "Blog Website",
+  description: "A modern blog with rich text editing and MongoDB integration",
+}
+
 
 export default function RootLayout({
   children,
@@ -28,10 +29,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
-      >  <Toaster richColors/>
-         <Navbar />
-         {children}
-         <Footer />
+      >
+        <SidebarProvider>
+          <div className="container mx-auto px-4">
+          {children}
+          </div>
+          <Toaster richColors />
+        </SidebarProvider>
       </body>
     </html>
   );
